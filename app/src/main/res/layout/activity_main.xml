@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:layout_width="205dp"
+        android:layout_height="153dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="Already a memeber?   Login here "
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+
+        <EditText
+            android:id="@+id/LGname"
+            android:layout_width="260dp"
+            android:layout_height="46dp"
+            android:textSize="20dp"
+            android:hint="Enter Username"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/lgnamaeimg"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+
+
+        <EditText
+            android:id="@+id/LGpassword"
+            android:layout_width="260dp"
+            android:layout_height="46dp"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Password"
+            android:textAlignment="center"
+            android:inputType="textPassword" />
+
+
+
+        <ImageView
+            android:id="@+id/LGpassimg"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/butstyle"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:textSize="25dp" />
+</LinearLayout>
